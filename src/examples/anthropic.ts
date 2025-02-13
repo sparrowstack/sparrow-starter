@@ -1,6 +1,6 @@
 import { Agent, Model, ApiKey, Provider } from '@sparrowstack/sparrow';
 import { InteractiveTerminal } from '@sparrowstack/interactive-terminal';
-import { softwareEngineerTypeScriptPrompt } from '@sparrowstack/system-prompts';
+import { softwareEngineerTypeScriptPromptParams } from '@sparrowstack/system-prompts';
 import {
 	getWeatherDataToolParams,
 	getDirectoryStructureToolParams,
@@ -8,7 +8,7 @@ import {
 
 // Configuration
 // --------------------------------
-const systemPrompt = softwareEngineerTypeScriptPrompt;
+const systemPrompt = softwareEngineerTypeScriptPromptParams;
 const tools = [getWeatherDataToolParams, getDirectoryStructureToolParams];
 
 const provider = Provider.Anthropic;
