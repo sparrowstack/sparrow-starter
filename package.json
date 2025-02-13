@@ -23,8 +23,7 @@
 		"typescript": "5.7.3"
 	},
 	"dependencies": {
-		"@sparrowstack/agent": "link:@sparrowstack/agent",
-		"@sparrowstack/core": "link:@sparrowstack/core",
+		"@sparrowstack/sparrow": "link:@sparrowstack/sparrow",
 		"@sparrowstack/interactive-terminal": "link:@sparrowstack/interactive-terminal",
 		"@sparrowstack/system-prompts": "link:@sparrowstack/system-prompts",
 		"@sparrowstack/tools": "link:@sparrowstack/tools"
