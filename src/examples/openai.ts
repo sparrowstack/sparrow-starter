@@ -16,6 +16,7 @@ const provider = Provider.OpenAI;
 const apiKey = process.env[ApiKey.OpenAI] as string;
 // --------------------------------
 
+// Instantiate Agent
 const agent = new Agent({
 	model,
 	tools,
@@ -25,6 +26,7 @@ const agent = new Agent({
 	// databaseUrl, - coming soon..
 	// vectorDatabaseUrl, - coming soon..
 });
-const interactiveTerminal = new InteractiveTerminal({ agent });
 
+// Start Interactive Terminal
+const interactiveTerminal = new InteractiveTerminal({ agent });
 await interactiveTerminal.start();

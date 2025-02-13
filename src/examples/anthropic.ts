@@ -15,6 +15,7 @@ const provider = Provider.Anthropic;
 const model = Model.Anthropic.Claude35Sonnet;
 const apiKey = process.env[ApiKey.Anthropic] as string;
 // --------------------------------
+
 // Instantiate Agent
 const agent = new Agent({
 	model,
