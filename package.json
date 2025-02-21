@@ -1,8 +1,8 @@
 {
 	"name": "sparrow-starter",
 	"scripts": {
-		"start:openai": "bun src/examples/openai.ts",
-		"start:anthropic": "bun src/examples/anthropic.ts",
+		"start:interactive-terminal:openai": "bun src/examples/openai.ts",
+		"start:interactive-terminal:anthropic": "bun src/examples/anthropic.ts",
 		"format": "prettier --write \"src/**/*.{js,ts,json,md}\"",
 		"format:check": "prettier --check \"src/**/*.{js,ts,json,md}\"",
 		"lint": "eslint \"src/**/*.{js,ts}\"",
