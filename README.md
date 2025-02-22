@@ -117,7 +117,7 @@ In your SparrowStack repository, run the following command to build and link the
 bun unlink:all
 ```
 
-### Sparrow Starter
+### SparrowStarter
 In your SparrowStarter repository, link the local packages from the `sparrowstack` repo and install the dependencies:
 
 1.  Link local packages from the `sparrowstack` repo
