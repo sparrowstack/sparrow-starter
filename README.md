@@ -7,7 +7,7 @@
 		<img src="/images/logo.png" alt="Logo" width="419" height="128">
 	</a> -->
 	<h1>SparrowStarter</h1>
-	<p>A development repository to streamline building and running AI agents using the SparrowStack framework.</p>
+	<p>A starter template for building AI agents using the SparrowStack framework.</p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -41,7 +41,7 @@
 
 ## About
 
-SparrowStarter is a development repository designed to streamline the process of building and running AI agents using the SparrowStack framework. It serves as a convenient starting point for developers, providing easy access to essential packages and tools from SparrowStack. With SparrowStarter, you can quickly set up your development environment, link local packages, and begin crafting AI solutions tailored to your specific needs.
+SparrowStarter is a starter template for building AI agents using the SparrowStack framework. It serves as a convenient starting point for developers, providing easy access to essential packages and tools from SparrowStack. With SparrowStarter, you can quickly set up your development environment, link local packages, and begin crafting AI solutions tailored to your specific needs.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
