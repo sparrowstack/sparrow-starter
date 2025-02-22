@@ -91,7 +91,7 @@ SparrowStarter is a starter template for building AI agents using the SparrowSta
     bun install
     ```
 
-### Quick Start
+### Running Your First AI Agent
 1.  Start the interactive terminal to run your AI agent
     ```sh
     bun start:interactive-terminal:openai
