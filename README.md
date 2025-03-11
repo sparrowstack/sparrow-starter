@@ -100,6 +100,10 @@ SparrowStarter is a starter template for building AI agents using the SparrowSta
     ```sh
     bun start:interactive-terminal:anthropic
     ```
+    or
+    ```sh
+    bun start:interactive-terminal:google-generative-ai
+    ```
 
 ## Development
 

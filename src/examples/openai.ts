@@ -1,4 +1,4 @@
-import { Agent, Model, ApiKey, Provider } from '@sparrowstack/sparrow';
+import { Agent, Model, Provider } from '@sparrowstack/sparrow';
 import { InteractiveTerminal } from '@sparrowstack/interactive-terminal';
 import { softwareEngineerTypeScriptPromptParams } from '@sparrowstack/system-prompts';
 import {
@@ -13,7 +13,7 @@ const tools = [getWeatherDataToolParams, getDirectoryStructureToolParams];
 
 const model = Model.OpenAI.GPT4o;
 const provider = Provider.OpenAI;
-const apiKey = process.env[ApiKey.OpenAI] as string;
+const apiKey = process.env.OPENAI_API_KEY as string;
 // --------------------------------
 
 // Instantiate Agent

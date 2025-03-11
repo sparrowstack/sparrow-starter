@@ -11,9 +11,9 @@ import {
 const systemPrompt = softwareEngineerTypeScriptPromptParams;
 const tools = [getWeatherDataToolParams, getDirectoryStructureToolParams];
 
-const provider = Provider.Anthropic;
-const model = Model.Anthropic.Claude35Sonnet;
-const apiKey = process.env.ANTHROPIC_API_KEY as string;
+const provider = Provider.GoogleGenerativeAI;
+const model = Model.GoogleGenerativeAI.Gemini20Flash;
+const apiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY as string;
 // --------------------------------
 
 // Instantiate Agent
