@@ -24,10 +24,10 @@
 		"typescript": "5.7.3"
 	},
 	"dependencies": {
-		"@sparrowstack/sparrow": "latest",
-		"@sparrowstack/interactive-terminal": "latest",
-		"@sparrowstack/system-prompts": "latest",
-		"@sparrowstack/tools": "latest"
+		"@sparrowstack/sparrow": "link:@sparrowstack/sparrow",
+		"@sparrowstack/interactive-terminal": "link:@sparrowstack/interactive-terminal",
+		"@sparrowstack/system-prompts": "link:@sparrowstack/system-prompts",
+		"@sparrowstack/tools": "link:@sparrowstack/tools"
 	},
 	"peerDependencies": {
 		"typescript": "^5.0.0"

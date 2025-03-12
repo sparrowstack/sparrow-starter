@@ -16,12 +16,24 @@
 
 		// Best practices
 		"strict": true,
-		"skipLibCheck": true,
+		"skipLibCheck": false,
 		"noFallthroughCasesInSwitch": true,
 
+		// Add these type checking options
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"suppressExcessPropertyErrors": false,
+		"strictFunctionTypes": true,
+		"strictPropertyInitialization": true,
+
 		// Some stricter flags (disabled by default)
-		"noUnusedLocals": false,
-		"noUnusedParameters": false,
-		"noPropertyAccessFromIndexSignature": false
-	}
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+
+		"exactOptionalPropertyTypes": true,
+		"noUncheckedIndexedAccess": true,
+		"noPropertyAccessFromIndexSignature": true
+	},
+	"include": ["src/**/*.ts"],
+	"exclude": ["node_modules", "dist"]
 }
