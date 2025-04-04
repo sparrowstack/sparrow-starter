@@ -1,6 +1,6 @@
 import { Agent, Model, Provider, type Settings } from '@sparrowstack/sparrow';
 import { InteractiveTerminal } from '@sparrowstack/interactive-terminal';
-import { softwareEngineerTypeScriptPromptParams } from '@sparrowstack/system-prompts';
+import { softwareEngineerTypeScriptPrompt } from '@sparrowstack/system-prompts';
 import {
 	getWeatherDataTool,
 	pressTheNukeButtonTool,
@@ -9,11 +9,11 @@ import {
 
 // Configuration
 // --------------------------------
-const model = Model.OpenAI.o3Mini;
-const provider = Provider.OpenAI;
-const apiKey = process.env['OPENAI_API_KEY'] as string;
+const provider = Provider.GoogleGenerativeAI;
+const model = Model.GoogleGenerativeAI.Gemini20Flash;
+const apiKey = process.env['GOOGLE_GENERATIVE_AI_API_KEY'] as string;
 
-const systemPrompt = softwareEngineerTypeScriptPromptParams;
+const systemPrompt = softwareEngineerTypeScriptPrompt;
 const tools = [
 	// Tool call with params
 	getWeatherDataTool,
@@ -26,6 +26,7 @@ const tools = [
 const settings: Settings = {
 	temperature: 0.03,
 };
+
 // --------------------------------
 
 // Instantiate Agent

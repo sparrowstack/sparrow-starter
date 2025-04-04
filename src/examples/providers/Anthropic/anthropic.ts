@@ -9,9 +9,10 @@ import {
 
 // Configuration
 // --------------------------------
-const provider = Provider.GoogleGenerativeAI;
-const model = Model.GoogleGenerativeAI.Gemini20Flash;
-const apiKey = process.env['GOOGLE_GENERATIVE_AI_API_KEY'] as string;
+
+const provider = Provider.Anthropic;
+const model = Model.Anthropic.Claude37Sonnet;
+const apiKey = process.env['ANTHROPIC_API_KEY'] as string;
 
 const systemPrompt = softwareEngineerTypeScriptPrompt;
 const tools = [
@@ -26,6 +27,7 @@ const tools = [
 const settings: Settings = {
 	temperature: 0.03,
 };
+
 // --------------------------------
 
 // Instantiate Agent
