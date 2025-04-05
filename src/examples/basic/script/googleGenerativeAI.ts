@@ -1,10 +1,9 @@
-// Import base classes
 import { Agent, Model, Provider } from '@sparrowstack/sparrow';
 
 // Define settings
-const provider = Provider.OpenAI;
-const model = Model.OpenAI.o3Mini;
-const apiKey = process.env['OPENAI_API_KEY'] as string;
+const provider = Provider.GoogleGenerativeAI;
+const model = Model.GoogleGenerativeAI.Gemini20Flash;
+const apiKey = process.env['GOOGLE_GENERATIVE_AI_API_KEY'] as string;
 const settings = {
 	temperature: 0.03,
 };

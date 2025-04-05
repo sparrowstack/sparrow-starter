@@ -1,5 +1,5 @@
-// Import base classes
 import { Agent, Model, Provider } from '@sparrowstack/sparrow';
+import { InteractiveTerminal } from '@sparrowstack/interactive-terminal';
 
 // Define settings
 const provider = Provider.Anthropic;
@@ -17,8 +17,6 @@ const agent = new Agent({
 	settings,
 });
 
-const response = await agent.sendMessage({
-	message: 'Hello, how are you?',
-});
-
-console.log(response.text);
+// Start Interactive Terminal
+const interactiveTerminal = new InteractiveTerminal({ agent });
+await interactiveTerminal.start();
