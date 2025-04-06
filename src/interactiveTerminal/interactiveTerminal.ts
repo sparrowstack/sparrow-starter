@@ -1,5 +1,18 @@
-import { Agent, Model, Provider, type Settings } from '@sparrowstack/sparrow';
+/**
+ * Usage:
+ * --------
+ * Use this file to play around with the SparrowStack Agent in an interactive terminal:
+ * - Switch up Providers / Models
+ * - Add/remove tools, or create your own
+ * - Change the system prompt, or create your own
+ *
+ * To Try:
+ * --------
+ * Try testing "human in the loop" with the `pressTheNukeButtonTool` tool.
+ * Ask the agent to "press the nuke button" and see what happens!
+ */
 import { InteractiveTerminal } from '@sparrowstack/interactive-terminal';
+import { Agent, Model, Provider, type Settings } from '@sparrowstack/sparrow';
 import { softwareEngineerTypeScriptPrompt } from '@sparrowstack/system-prompts';
 import {
 	getWeatherDataTool,
@@ -9,13 +22,14 @@ import {
 
 // Configuration
 // --------------------------------
-const provider = Provider.GoogleGenerativeAI;
-const model = Model.GoogleGenerativeAI.Gemini20Flash;
-const apiKey = process.env['GOOGLE_GENERATIVE_AI_API_KEY'] as string;
+const provider = Provider.OpenAI;
+const model = Model.OpenAI.o3Mini;
+const apiKey = process.env['OPENAI_API_KEY'] as string;
 
 const systemPrompt = softwareEngineerTypeScriptPrompt;
 const tools = [
 	// Tool call with params
+	// OPEN_WEATHER_MAP_API_KEY is required
 	getWeatherDataTool,
 	// Tool call with human in the loop
 	pressTheNukeButtonTool,

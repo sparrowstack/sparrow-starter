@@ -1,9 +1,7 @@
 {
 	"name": "sparrow-starter",
 	"scripts": {
-		"start:interactive-terminal:openai": "bun src/examples/openai.ts",
-		"start:interactive-terminal:anthropic": "bun src/examples/anthropic.ts",
-		"start:interactive-terminal:google-generative-ai": "bun src/examples/googleGenerativeAI.ts",
+		"start:interactive-terminal": "bun src/interactiveTerminal/interactiveTerminal.ts",
 		"format": "prettier --write \"src/**/*.{js,ts,json,md}\"",
 		"format:check": "prettier --check \"src/**/*.{js,ts,json,md}\"",
 		"lint": "eslint \"src/**/*.{js,ts}\"",
@@ -24,10 +22,11 @@
 		"typescript": "5.7.3"
 	},
 	"dependencies": {
-		"@sparrowstack/sparrow": "link:@sparrowstack/sparrow",
-		"@sparrowstack/interactive-terminal": "link:@sparrowstack/interactive-terminal",
-		"@sparrowstack/system-prompts": "link:@sparrowstack/system-prompts",
-		"@sparrowstack/tools": "link:@sparrowstack/tools"
+		"@sparrowstack/interactive-terminal": "latest",
+		"@sparrowstack/sparrow": "latest",
+		"@sparrowstack/system-prompts": "latest",
+		"@sparrowstack/tools": "latest",
+		"zod": "^3.24.2"
 	},
 	"peerDependencies": {
 		"typescript": "^5.0.0"
