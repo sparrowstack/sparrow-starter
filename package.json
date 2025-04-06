@@ -22,10 +22,9 @@
 		"typescript": "5.7.3"
 	},
 	"dependencies": {
+		"@sparrowstack/community": "latest",
 		"@sparrowstack/interactive-terminal": "latest",
 		"@sparrowstack/sparrow": "latest",
-		"@sparrowstack/system-prompts": "latest",
-		"@sparrowstack/tools": "latest",
 		"zod": "^3.24.2"
 	},
 	"peerDependencies": {

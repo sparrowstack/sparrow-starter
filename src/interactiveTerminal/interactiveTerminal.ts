@@ -13,12 +13,12 @@
  */
 import { InteractiveTerminal } from '@sparrowstack/interactive-terminal';
 import { Agent, Model, Provider, type Settings } from '@sparrowstack/sparrow';
-import { softwareEngineerTypeScriptPrompt } from '@sparrowstack/system-prompts';
+import { softwareEngineerTypeScriptPrompt } from '@sparrowstack/community/system-prompts';
 import {
 	getWeatherDataTool,
 	pressTheNukeButtonTool,
 	getDirectoryStructureTool,
-} from '@sparrowstack/tools';
+} from '@sparrowstack/community/tools';
 
 // Configuration
 // --------------------------------
