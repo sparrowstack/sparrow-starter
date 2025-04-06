@@ -1,18 +1,7 @@
 {
 	"name": "sparrow-starter",
 	"scripts": {
-		"example:basic:agent:openai": "bun src/examples/basic/agent/openai.ts",
-		"example:basic:agent:anthropic": "bun src/examples/basic/agent/anthropic.ts",
-		"example:basic:agent:google-generative-ai": "bun src/examples/basic/agent/googleGenerativeAI.ts",
-		"example:basic:interactive-terminal:openai": "bun src/examples/basic/interactiveTerminal/openai.ts",
-		"example:basic:interactive-terminal:anthropic": "bun src/examples/basic/interactiveTerminal/anthropic.ts",
-		"example:basic:interactive-terminal:google-generative-ai": "bun src/examples/basic/interactiveTerminal/googleGenerativeAI.ts",
-		"example:toolCall:agent:anthropic": "bun src/examples/toolCall/agent/anthropic.ts",
-		"example:toolCall:agent:openai": "bun src/examples/toolCall/agent/openai.ts",
-		"example:toolCall:agent:google-generative-ai": "bun src/examples/toolCall/agent/googleGenerativeAI.ts",
-		"example:toolCall:interactive-terminal:anthropic": "bun src/examples/toolCall/interactiveTerminal/anthropic.ts",
-		"example:toolCall:interactive-terminal:openai": "bun src/examples/toolCall/interactiveTerminal/openai.ts",
-		"example:toolCall:interactive-terminal:google-generative-ai": "bun src/examples/toolCall/interactiveTerminal/googleGenerativeAI.ts",
+		"start:interactive-terminal": "bun src/interactiveTerminal/interactiveTerminal.ts",
 		"format": "prettier --write \"src/**/*.{js,ts,json,md}\"",
 		"format:check": "prettier --check \"src/**/*.{js,ts,json,md}\"",
 		"lint": "eslint \"src/**/*.{js,ts}\"",
@@ -33,13 +22,13 @@
 		"typescript": "5.7.3"
 	},
 	"dependencies": {
-		"@sparrowstack/interactive-terminal": "link:@sparrowstack/interactive-terminal",
-		"@sparrowstack/sparrow": "link:@sparrowstack/sparrow",
-		"@sparrowstack/structured-output": "link:@sparrowstack/structured-output",
-		"@sparrowstack/system-prompt": "link:@sparrowstack/system-prompt",
-		"@sparrowstack/system-prompts": "link:@sparrowstack/system-prompts",
-		"@sparrowstack/tool": "link:@sparrowstack/tool",
-		"@sparrowstack/tools": "link:@sparrowstack/tools",
+		"@sparrowstack/interactive-terminal": "latest",
+		"@sparrowstack/sparrow": "latest",
+		"@sparrowstack/structured-output": "latest",
+		"@sparrowstack/system-prompt": "latest",
+		"@sparrowstack/system-prompts": "latest",
+		"@sparrowstack/tool": "latest",
+		"@sparrowstack/tools": "latest",
 		"zod": "^3.24.2"
 	},
 	"peerDependencies": {

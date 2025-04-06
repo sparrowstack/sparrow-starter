@@ -11,7 +11,7 @@ const ChainOfThought = z
 	})
 	.describe('The LLM chain of thought to arrive to this answer.');
 
-export const ChatMetadata = z.object({
+export const ChatMetadataResponseFormat = z.object({
 	text: z.string().describe('The response text to display to the user'),
 	metadata: z
 		.object({

@@ -7,7 +7,7 @@
 		<img src="/images/logo.png" alt="Logo" width="419" height="128">
 	</a> -->
 	<h1>SparrowStarter</h1>
-	<p>A starter template for building AI agents using the SparrowStack framework.</p>
+	<p>SparrowStarter is the official starter template for building AI agents with the SparrowStack framework.</p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -17,9 +17,6 @@
 	<ol>
 		<li>
 			<a href="#about-the-project">About The Project</a>
-			<ul>
-				<li><a href="#built-with">Built With</a></li>
-			</ul>
 		</li>
 		<li>
 			<a href="#getting-started">Getting Started</a>
@@ -40,18 +37,8 @@
 <br/>
 
 ## About
+SparrowStarter is the official starter template for building AI agents with the SparrowStack framework. This repository includes [example implementations](./src/examples) demonstrating how to configure SparrowStack Agents with different models, system prompts, leverage tool calling, and produce structured outputs. You can also spin up agents locally using the SparrowStack [interactive terminal](./src/interactiveTerminal).
 
-SparrowStarter is a starter template for building AI agents using the SparrowStack framework. It serves as a convenient starting point for developers, providing easy access to essential packages and tools from SparrowStack. With SparrowStarter, you can quickly set up your development environment, link local packages, and begin crafting AI solutions tailored to your specific needs.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-### Built With
-
-- [Bun](https://bun.sh/)
-- [Nx](https://nx.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Prettier](https://prettier.io/)
-- [ESLint](https://eslint.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -79,10 +66,24 @@ SparrowStarter is a starter template for building AI agents using the SparrowSta
 
 3.  Setup environment variables
 
-    Copy the `.env.template` file to `.env` and update the variables
+    Copy the `.env.template` file to `.env`
 
     ```sh
     cp .env.template .env
+    ```
+
+    Update the `.env` file with your own values for use with different APIs and AI Providers.
+    ```sh
+    # .env
+    LOG_LEVEL=INFO
+
+    # Providers
+    OPENAI_API_KEY=
+    ANTHROPIC_API_KEY=
+    GOOGLE_GENERATIVE_AI_API_KEY=
+
+    #Services
+    OPEN_WEATHER_MAP_API_KEY=
     ```
 
 4.  Install packages
@@ -92,16 +93,30 @@ SparrowStarter is a starter template for building AI agents using the SparrowSta
     ```
 
 ### Running Your First AI Agent
-1.  Start the interactive terminal to run your AI agent
-    ```sh
-    bun start:interactive-terminal:openai
-    ```
-    ```sh
-    bun start:interactive-terminal:anthropic
-    ```
-    ```sh
-    bun start:interactive-terminal:google-generative-ai
-    ```
+
+#### Example Implementations
+Navigate to the [src/examples](./src/examples) directory where you will find examples of how to configure SparrowStack Agents with different models, system prompts, leverage tool calling, and produce structured outputs.
+
+To run an example file locally simply run `bun src/examples/path/to/example.ts`.
+
+Example:
+```sh
+bun src/examples/toolCalling/script/openai.ts
+```
+
+You can also run each example file in the SparrowStack interactive terminal:
+```sh
+bun src/examples/toolCalling/interactiveTerminal/openai.ts
+```
+
+#### Agent Example
+This [agent example](./src/interactiveTerminal) demonstrates a realistic SparrowStack agent setup. It uses system prompts and equips the agent with multiple tools to leverage. Treat this as a sandbox for experimenting with different models, prompts, and tool integrations.
+
+To start this example agent, run the following command:
+```sh
+bun start:interactive-terminal
+```
+
 
 ## Development
 

@@ -1,1 +1,0 @@
-export { ChatMetadata } from './ChatMetadata';

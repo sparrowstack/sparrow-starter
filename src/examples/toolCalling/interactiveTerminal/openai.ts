@@ -1,5 +1,6 @@
 import { Agent, Model, Provider } from '@sparrowstack/sparrow';
-import { addTwoNumbersTool } from '@src/examples/toolCall/addTwoNumbersTool';
+import { InteractiveTerminal } from '@sparrowstack/interactive-terminal';
+import { addTwoNumbersTool } from '@src/examples/toolCalling/addTwoNumbersTool';
 
 // Define settings
 const provider = Provider.OpenAI;
@@ -18,8 +19,6 @@ const agent = new Agent({
 	tools: [addTwoNumbersTool],
 });
 
-const response = await agent.sendMessage({
-	message: 'What is the sum of 2 and 2?',
-});
-
-console.log(response.text);
+// Start Interactive Terminal
+const interactiveTerminal = new InteractiveTerminal({ agent });
+await interactiveTerminal.start();
