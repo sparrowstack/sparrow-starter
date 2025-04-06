@@ -111,8 +111,8 @@ In your SparrowStarter repository, link the local packages from the `sparrowstac
     // package.json
     "dependencies": {
         "@sparrowstack/community": "link:@sparrowstack/community",
-		"@sparrowstack/interactive-terminal": "link:@sparrowstack/interactive-terminal",
-		"@sparrowstack/sparrow": "link:@sparrowstack/sparrow",
+        "@sparrowstack/interactive-terminal": "link:@sparrowstack/interactive-terminal",
+        "@sparrowstack/sparrow": "link:@sparrowstack/sparrow",
     }
     ```
 
