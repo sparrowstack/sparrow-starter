@@ -2,8 +2,8 @@ import { Agent, Model, Provider } from '@sparrowstack/sparrow';
 import { InteractiveTerminal } from '@sparrowstack/interactive-terminal';
 
 // Define settings
-const model = Model.OpenAI.o3Mini;
 const provider = Provider.OpenAI;
+const model = Model.OpenAI.o3Mini;
 const apiKey = process.env['OPENAI_API_KEY'] as string;
 const settings = {
 	temperature: 0.03,

@@ -1,4 +1,4 @@
-import { Tool, PropertyType } from '@sparrowstack/tool';
+import { Tool, PropertyType } from '@sparrowstack/sparrow';
 
 // Define Tool
 export const addTwoNumbersTool = new Tool({

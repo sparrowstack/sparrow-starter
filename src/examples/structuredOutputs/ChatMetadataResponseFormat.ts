@@ -11,6 +11,7 @@ const ChainOfThought = z
 	})
 	.describe('The LLM chain of thought to arrive to this answer.');
 
+// This response format just adds metadata to the response
 export const ChatMetadataResponseFormat = z.object({
 	text: z.string().describe('The response text to display to the user'),
 	metadata: z

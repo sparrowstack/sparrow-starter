@@ -24,10 +24,7 @@
 	"dependencies": {
 		"@sparrowstack/interactive-terminal": "latest",
 		"@sparrowstack/sparrow": "latest",
-		"@sparrowstack/structured-output": "latest",
-		"@sparrowstack/system-prompt": "latest",
 		"@sparrowstack/system-prompts": "latest",
-		"@sparrowstack/tool": "latest",
 		"@sparrowstack/tools": "latest",
 		"zod": "^3.24.2"
 	},

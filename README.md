@@ -109,45 +109,37 @@ You can also run each example file in the SparrowStack interactive terminal:
 bun src/examples/toolCalling/interactiveTerminal/openai.ts
 ```
 
-#### Agent Example
-This [agent example](./src/interactiveTerminal) demonstrates a realistic SparrowStack agent setup. It uses system prompts and equips the agent with multiple tools to leverage. Treat this as a sandbox for experimenting with different models, prompts, and tool integrations.
+#### Example Agent
+This [example agent](./src/interactiveTerminal) demonstrates a realistic SparrowStack agent setup. It uses system prompts and equips the agent with multiple tools to leverage. Treat this as a sandbox for experimenting with different models, prompts, and tool integrations.
 
 To start this example agent, run the following command:
 ```sh
 bun start:interactive-terminal
 ```
 
-
 ## Development
 
 ### SparrowStack
-In your SparrowStack repository, run the following command to build and link the local packages:
+Clone and setup the [SparrowStack](https://github.com/sparrowstack/sparrowstack) repo. From the `sparrowstack` repo, build and link the local packages:
 
 1.  Build and link the local packages
     ```sh
-    bun release:all:local
+    bun build:clean
     ```
-
-> [!NOTE]
-> To unlink the local packages from the `sparrowstack` repo, run the following command (from the `sparrowstack` repo):
-```sh
-bun unlink:all
-```
 
 ### SparrowStarter
 In your SparrowStarter repository, link the local packages from the `sparrowstack` repo and install the dependencies:
 
-1.  Link local packages from the `sparrowstack` repo
+1.  Link local packages from the `sparrowstack` repo:
 
     ```sh
     // package.json
-
     "dependencies": {
-        "@sparrowstack/sparrow": "link:@sparrowstack/sparrow",
         "@sparrowstack/interactive-terminal": "link:@sparrowstack/interactive-terminal",
+        "@sparrowstack/sparrow": "link:@sparrowstack/sparrow",
         "@sparrowstack/system-prompts": "link:@sparrowstack/system-prompts",
-        "@sparrowstack/tools": "link:@sparrowstack/tools"
-    },
+        "@sparrowstack/tools": "link:@sparrowstack/tools",
+    }
     ```
 
 2.  Install the dependencies

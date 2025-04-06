@@ -1,15 +1,13 @@
 /**
- * --------------------------------
- * 			Usage
- * --------------------------------
+ * Usage:
+ * --------
  * Use this file to play around with the SparrowStack Agent in an interactive terminal:
  * - Switch up Providers / Models
  * - Add/remove tools, or create your own
  * - Change the system prompt, or create your own
  *
- * --------------------------------
- *			To Try
- * --------------------------------
+ * To Try:
+ * --------
  * Try testing "human in the loop" with the `pressTheNukeButtonTool` tool.
  * Ask the agent to "press the nuke button" and see what happens!
  */
@@ -24,9 +22,9 @@ import {
 
 // Configuration
 // --------------------------------
-const provider = Provider.Anthropic;
-const model = Model.Anthropic.Claude37Sonnet;
-const apiKey = process.env['ANTHROPIC_API_KEY'] as string;
+const provider = Provider.OpenAI;
+const model = Model.OpenAI.o3Mini;
+const apiKey = process.env['OPENAI_API_KEY'] as string;
 
 const systemPrompt = softwareEngineerTypeScriptPrompt;
 const tools = [
