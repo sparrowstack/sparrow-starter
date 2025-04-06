@@ -37,7 +37,7 @@
 <br/>
 
 ## About
-SparrowStarter is the official starter template for building AI agents with the SparrowStack framework. This repository includes [example implementations](./src/examples) demonstrating how to configure SparrowStack Agents with different models, system prompts, leverage tool calling, and produce structured outputs. You can also spin up agents locally using the SparrowStack [interactive terminal](./src/interactiveTerminal).
+SparrowStarter is the official starter template for building AI agents with the SparrowStack framework. This repository includes [example implementations](./src/examples) demonstrating how to configure SparrowStack Agents with different models, system prompts, tool calling, and structured outputs. You can also spin up agents locally using the SparrowStack [interactive terminal](./src/interactiveTerminal).
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -95,7 +95,7 @@ SparrowStarter is the official starter template for building AI agents with the 
 ### Running Your First AI Agent
 
 #### Example Implementations
-Navigate to the [src/examples](./src/examples) directory where you will find examples of how to configure SparrowStack Agents with different models, system prompts, leverage tool calling, and produce structured outputs.
+Navigate to the [src/examples](./src/examples) directory where you will find examples of how to configure SparrowStack Agents with different models, system prompts, tool calling, and structured outputs.
 
 To run an example file locally simply run `bun src/examples/path/to/example.ts`.
 
@@ -128,9 +128,9 @@ Clone and setup the [SparrowStack](https://github.com/sparrowstack/sparrowstack)
     ```
 
 ### SparrowStarter
-In your SparrowStarter repository, link the local packages from the `sparrowstack` repo and install the dependencies:
+In your SparrowStarter repository, link the local packages from the `sparrowstack` repo:
 
-1.  Link local packages from the `sparrowstack` repo:
+1.  Link local packages from the `package.json`:
 
     ```sh
     // package.json
