@@ -35,7 +35,7 @@
 		<li>
 			<a href="#development">Development</a>
 			<ul>
-				<li><a href="#sparrowstack">SparrowStack</a></li>
+				<li><a href="#sparrow-stack">SparrowStack</a></li>
 				<li><a href="#sparrow-starter">SparrowStarter</a></li>
 			</ul>
 	</ol>
