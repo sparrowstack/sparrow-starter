@@ -130,7 +130,7 @@ Clone and setup the [SparrowStack](https://github.com/sparrowstack/sparrowstack)
 
 1.  Build and link the local packages
     ```sh
-    bun build:clean
+    bun setup:dev
     ```
 
 ### SparrowStarter
