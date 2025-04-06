@@ -7,43 +7,11 @@
 		<img src="/images/logo.png" alt="Logo" width="419" height="128">
 	</a> -->
 	<h1>SparrowStarter</h1>
-	<p>SparrowStarter is the official starter template for building AI agents with the SparrowStack framework.</p>
+	<p>SparrowStarter is the official starter template for building AI agents with the Sparrow framework.</p>
 </div>
 
-<!-- TABLE OF CONTENTS -->
-<br/>
-<details>
-	<summary>Table of Contents</summary>
-	<ol>
-		<li>
-			<a href="#about-the-project">About The Project</a>
-		</li>
-		<li>
-			<a href="#getting-started">Getting Started</a>
-			<ul>
-				<li><a href="#prerequisites">Prerequisites</a></li>
-				<li><a href="#installation">Installation</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="#running-your-first-ai-agent">Running Your First AI Agent</a>
-			<ul>
-				<li><a href="#example-implementations">Example Implementations</a></li>
-				<li><a href="#example-agent">Example Agent</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="#development">Development</a>
-			<ul>
-				<li><a href="#sparrow-stack">SparrowStack</a></li>
-				<li><a href="#sparrow-starter">SparrowStarter</a></li>
-			</ul>
-	</ol>
-</details>
-<br/>
-
 ## About
-SparrowStarter is the official starter template for building AI agents with the SparrowStack framework. This repository includes [example implementations](./src/examples) demonstrating how to configure SparrowStack Agents with different models, system prompts, tool calling, and structured outputs. You can also spin up agents locally using the SparrowStack [interactive terminal](./src/interactiveTerminal).
+SparrowStarter is the official starter template for building AI agents with the Sparrow framework. This repository includes [example implementations](./src/examples) demonstrating how to configure Sparrow Agents with different models, system prompts, tool calling, and structured outputs. You can also spin up agents locally using the SparrowStack [interactive terminal](./src/interactiveTerminal).
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -101,7 +69,7 @@ SparrowStarter is the official starter template for building AI agents with the 
 ### Running Your First AI Agent
 
 #### Example Implementations
-Navigate to the [src/examples](./src/examples) directory where you will find examples of how to configure SparrowStack Agents with different models, system prompts, tool calling, and structured outputs.
+Navigate to the [src/examples](./src/examples) directory where you will find examples of how to configure Sparrow Agents with different models, system prompts, tool calling, and structured outputs.
 
 To run an example file locally simply run `bun src/examples/path/to/example.ts`.
 
@@ -116,7 +84,7 @@ bun src/examples/toolCalling/interactiveTerminal/openai.ts
 ```
 
 #### Example Agent
-This [example agent](./src/interactiveTerminal) demonstrates a realistic SparrowStack agent setup. It uses system prompts and equips the agent with multiple tools to leverage. Treat this as a sandbox for experimenting with different models, prompts, and tool integrations.
+This [example agent](./src/interactiveTerminal) demonstrates a realistic Sparrow agent setup. It uses system prompts and equips the agent with multiple tools to leverage. Treat this as a sandbox for experimenting with different models, prompts, and tool integrations.
 
 To start this example agent, run the following command:
 ```sh
