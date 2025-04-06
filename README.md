@@ -23,7 +23,13 @@
 			<ul>
 				<li><a href="#prerequisites">Prerequisites</a></li>
 				<li><a href="#installation">Installation</a></li>
-				<li><a href="#quick-start">Quick Start</a></li>
+			</ul>
+		</li>
+		<li>
+			<a href="#running-your-first-ai-agent">Running Your First AI Agent</a>
+			<ul>
+				<li><a href="#example-implementations">Example Implementations</a></li>
+				<li><a href="#example-agent">Example Agent</a></li>
 			</ul>
 		</li>
 		<li>
