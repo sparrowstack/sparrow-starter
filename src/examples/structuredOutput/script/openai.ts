@@ -1,11 +1,11 @@
 import { Agent, Model, Provider } from '@sparrowstack/sparrow';
 // This response format just adds metadata to the response
-import { ChatMetadataResponseFormat } from '@src/examples/structuredOutputs/ChatMetadataResponseFormat';
+import { ChatMetadataResponseFormat } from '@src/examples/structuredOutput/ChatMetadataResponseFormat';
 
 // Define settings
-const provider = Provider.Anthropic;
-const model = Model.Anthropic.Claude37Sonnet;
-const apiKey = process.env['ANTHROPIC_API_KEY'] as string;
+const provider = Provider.OpenAI;
+const model = Model.OpenAI.o3Mini;
+const apiKey = process.env['OPENAI_API_KEY'] as string;
 const settings = {
 	temperature: 0.03,
 };

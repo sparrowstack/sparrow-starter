@@ -22,9 +22,14 @@ import {
 
 // Configuration
 // --------------------------------
-const provider = Provider.OpenAI;
-const model = Model.OpenAI.o3Mini;
-const apiKey = process.env['OPENAI_API_KEY'] as string;
+// const provider = Provider.OpenAI;
+// const model = Model.OpenAI.GPT45Preview;
+// const provider = Provider.GoogleGenerativeAI;
+// const model = Model.GoogleGenerativeAI.Gemini20Flash;
+// const apiKey = process.env['GOOGLE_GENERATIVE_AI_API_KEY'] as string;
+const provider = Provider.Anthropic;
+const model = Model.Anthropic.Claude37Sonnet;
+const apiKey = process.env['ANTHROPIC_API_KEY'] as string;
 
 const systemPrompt = softwareEngineerTypeScriptPrompt;
 const tools = [
