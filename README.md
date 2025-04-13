@@ -14,9 +14,6 @@
 ## About
 SparrowStarter is the official starter template for building AI agents with the Sparrow framework. This repository includes [example implementations](./src/examples) demonstrating how to configure Sparrow Agents with different models, system prompts, tool calling, and structured outputs. You can also spin up agents locally using the SparrowStack [interactive terminal](./src/interactiveTerminal).
 
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## Getting Started
@@ -121,5 +118,3 @@ In your SparrowStarter repository, link the local packages from the `sparrowstac
     ```sh
     bun install
     ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>

@@ -4,7 +4,13 @@ import { Tool, PropertyType } from '@sparrowstack/sparrow';
 export const addTwoNumbersTool = new Tool({
 	name: 'addTwoNumbers',
 	description: 'Add two numbers together.',
-	function: ({ number1, number2 }: { number1: number; number2: number }) => {
+	function: async ({
+		number1,
+		number2,
+	}: {
+		number1: number;
+		number2: number;
+	}) => {
 		return number1 + number2;
 	},
 	parameters: {
