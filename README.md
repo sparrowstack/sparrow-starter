@@ -1,11 +1,5 @@
-<!-- README copied from https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/README.md -->
-
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
-	<!-- <a href="https://github.com/DWC01/dapp-sandbox-contracts">
-		<img src="/images/logo.png" alt="Logo" width="419" height="128">
-	</a> -->
 	<h1>SparrowStarter</h1>
 	<p>SparrowStarter is the official starter template for building AI agents with the Sparrow framework.</p>
 </div>
